@@ -1,2 +1,6 @@
-<h4>test</h4>
+<h2><strong>Rooms</strong></h2>
 <div ng-repeat="Room in home.rooms" track by $index>{{Room.$value}}</div>
+
+<div ng-controller="RoomModalCtrl as roomModalCtrl">
+  <button type="button" class="btn btn-default" ng-click="roomModalCtrl.open()"> New Room </button>
+</div>
