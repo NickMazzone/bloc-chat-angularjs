@@ -1,6 +1,17 @@
 <h2><strong>Rooms</strong></h2>
-<div ng-repeat="Room in home.rooms" track by $index>{{Room.$value}}</div>
+<div class="room-container">
+  <div ng-repeat="Room in home.rooms" track by $index>
+    <div ng-click="home.setRoom(Room)">
+      {{Room.$value}}
+    </div>
+  </div>
 
-<div ng-controller="RoomModalCtrl as roomModalCtrl">
-  <button type="button" class="btn btn-default" ng-click="roomModalCtrl.open()"> New Room </button>
+  <div ng-controller="RoomModalCtrl as roomModalCtrl">
+    <button type="button" class="btn btn-default" ng-click="roomModalCtrl.open()"> New Room </button>
+  </div>
 </div>
+
+  <div class="message-container" ng-controller="MessageCtrl as messageCtrl">
+    <input type="text" value="New Message">
+    <button type="submit" class="btn btn-default" ng-click="messageCtrl.new1Message()"> Send Message </button>
+  </div>
