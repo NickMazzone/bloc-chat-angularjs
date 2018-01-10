@@ -6,9 +6,9 @@
 
     Message.getByRoomId = function(roomId) {
       console.log("get messages for " + roomId);
-        // Filter the messages by their room ID.
-      this.messages = $firebaseArray(ref.orderByChild('roomId').equalTo(roomId));
-      console.log(messages);
+      this.messages = $firebaseArray(ref.orderByChild("roomId").equalTo(roomId));
+      console.log(this.messages);
+      console.log(allMessages);
       return this.messages;
     };
 

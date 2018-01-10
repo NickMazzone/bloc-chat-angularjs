@@ -4,7 +4,7 @@
       this.setRoom = function(room){
         console.log(room);
         this.activeRoom=room;
-        Message.getByRoomId(room.$id);
+        this.messages=Message.getByRoomId(room.$id);
       };
     }
     angular

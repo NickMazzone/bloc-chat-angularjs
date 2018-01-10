@@ -4,25 +4,17 @@
     <meta charset="UTF-8">
     <title>Bloc Chat Project</title>
     <link rel="stylesheet" href="/styles/main.css">
+    <div id="bg">
+      <img src="..\assets\Images\bg.jpeg" alt="">
+    </div>
 </head>
 <body>
-  <div id="container">
-    <div id="header"><h1>Bloc Chat</h1>
-    </div>
-      <div id="wrapper">
-        <div id="content">
+  <div class="container">
+      <div class="wrapper">
+        <div class="content">
           <ui-view></ui-view>
         </div>
       </div>
-        <div id="navigation">
-          <ul>
-            <li><a href="">BlocChat</a></li>
-            <li><a href="nickmazzone.com">BlocJams</a></li>
-          </ul>
-        </div>
-        <div id="footer">
-          <p>Nick Mazzone's Bloc Chat</p>
-        </div>
     </div>
     <!-- FireBase -->
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
@@ -34,7 +26,7 @@
         databaseURL: "https://bloc-chat-angularjs-aa640.firebaseio.com",
         projectId: "bloc-chat-angularjs-aa640",
         storageBucket: "bloc-chat-angularjs-aa640.appspot.com",
-        messagingSenderId: "1014250130453"
+        messagingSenderclass: "1014250130453"
       };
       firebase.initializeApp(config);
     </script>
