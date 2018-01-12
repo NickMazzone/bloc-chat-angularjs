@@ -7,9 +7,10 @@
 <body>
   <div>
     <form ng-submit="nameInstCtrl.submit()">
-      <h2> Choose a Username: </h2>
-      <input type="text" ng-model="nameInstCtrl.name">
-      <button class="button" type="submit" class="btn btn-default" ng-click="nameInstCtrl.submit()"> Submit </button>
+      <h3> Welcome! </h3>
+      <h4> First time here? Choose a Username: </h4>
+      <input class="usermodal" type="text" ng-model="nameInstCtrl.username">
+      <button class="button" type="submit" class="btn btn-default"> Submit </button>
     </form>
   </div>
 </body>
