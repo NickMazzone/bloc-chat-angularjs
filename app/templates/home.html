@@ -24,9 +24,9 @@
     </ul>
   </div>
 
-  <div class="message-bar">
-    <input type="text" value="New Message">
-    <button class="button" type="submit" ng-click="messageCtrl.new1Message()"> Send Message </button>
+  <div class="message-bar" ng-controller="MessageCtrl as messageCtrl">
+    <input type="text" ng-model="messageCtrl.message" placeholder="New Message" >
+    <button class="button" type="submit" ng-click="messageCtrl.send(home.activeRoom.$id)"> Send Message </button>
   </div>
 
   <div class="navigation">
